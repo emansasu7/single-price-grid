@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --LightCyan: hsla(179, 62%, 43%, 0.877);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: var(--Light-Gray);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+.card {
+  /* border-radius: 40px; */
+  /* background-color: brown; */
+  width: 50%;
+  height: 60%;
+}
+
+.topContainer {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px 20px 0 0;
+}
+.topContainer h2 {
+  color: var(--Cyan);
+  margin-bottom: 20px;
+}
+.subHeading {
+  color: var(--Bright-Yellow);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.topPText {
+  color: var(--Grayish-Blue);
+  line-height: 1.5;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottomLeft {
+  background-color: var(--Cyan);
+  padding: 30px;
+  flex: 1;
+  color: #fff;
+  border-radius: 0 0 0 20px;
+}
+.bottomLeft h3 {
+  margin-bottom: 20px;
+}
+.price {
+  color: #fff;
+  font-size: 32px;
+  margin-right: 5px;
+}
+.month {
+  color: rgba(255, 255, 255, 0.37);
+  margin-bottom: 3px;
+}
+.btn-sign {
+  height: 40px;
+  width: 230px;
+  margin-top: 20px;
+  background-color: var(--Bright-Yellow);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  /* box-shadow: 1px 1px 1px var; */
+}
+.bottomRight {
+  background-color: var(--LightCyan);
+  padding: 30px;
+  flex: 1;
+  color: #fff;
+  border-radius: 0 0 20px 0px;
+}
+.bottomRight h3 {
+  margin-bottom: 20px;
+}
+.ul {
+  list-style: none;
+}
+.ul li {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 425px) {
+  .card {
+    width: 80%;
+    height: 100%;
+  }
+
+  .topContainer {
+    width: 100%;
+  }
+  .bottom {
+    flex-direction: column;
+  }
+  .bottomLeft,
+  .bottomRight {
+    width: 100%;
+    border-radius: 0;
+  }
+}
